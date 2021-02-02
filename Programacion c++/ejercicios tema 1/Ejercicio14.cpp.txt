@@ -1,0 +1,25 @@
+/* programa para calculaar la media
+y la desviación tipica dando entrada
+a 3 números*/
+
+#include <iostream>
+#include <cmath>
+using namespace std;
+int main () {
+// marcamos las variables.	
+	double x1= 0.0, x2= 0.0, x3= 0.0;	
+	double media= 0.0, desviacion_tipica= 0.0;
+// presentamos el programa y pedimos las ENTRADAS al usuario.
+	cout << "Bienvenidos al programa para calcular la media y la desviacion típica" << endl;
+	cout << "para empezar, introduzca el valor de x1: ";
+	cin >> x1;
+	cout << " para continuar, introduzca el valor de x2: ";
+	cin >> x2;
+	cout << " finalmente, introduzca el valor de x3: ";
+	cin >> x3;
+// Procesos para calcular la media y la desviación	
+	media = ( x1 + x2 + x3) / 3;
+	desviacion_tipica = sqrt( pow(x1-media, 2) + pow(x2-media, 2) + pow(x3-media, 2)) / 3;
+// Damos SALIDA a los datos.
+	cout << "la media será: " << media << " y la desviación típica será de: " << desviacion_tipica << endl;
+} 

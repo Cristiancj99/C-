@@ -1,0 +1,19 @@
+/* Programa para calcular el cambio
+dado en una tienda */
+
+#include <iostream>
+using namespace std;
+int main() {
+// Aquí calcularemos las variables necesarias.	
+	double precio= 0.0, pagado= 0.0;
+	double centimos= 0.0;
+// Entrada del programa ( el precio del producto y el dinero dado).	
+	cout << "Escriba precio y dinero entregado: ";
+	cin >> precio >> pagado;
+// Cálculo del cambio.
+	centimos=(pagado-precio)* 100;
+// Salida del programa: cambio que hay que dar.	
+	cout << "Hay que devolver: " << centimos << " centimos" << endl;
+}
+/*El fallo del programa era que había
+usado la variable int en vez de double.*/

@@ -1,0 +1,43 @@
+Problema 1.1  
+1.- Falso. Tanto los programas como los datos se almacenarán en la memoria masiva.
+2.- Falso. se almacenará dependiendo del tamaño en bits.
+3.- Falso. debido a que al poner comillas nos contará como una cadena de carácteres mientras que el numero real nos ocupará solo el espacio reservado para el ,
+si es double 64 bits y si es float 32. 
+4.- Falso. Debido a que cada lenguaje deberá de tener su compilador.
+5.- Falso. Debido a que no tienen por que estar en la misma linea, los espacios son para entenderlo mejor.
+6.- Falso. A día de hoy es falso por que tods nuestros programas lo deberán de tener, pero es posible un programa sin esto.
+7.- Falso. Tendremos que cambiar la palabra enlazado por preprocesamiento.
+8.- Falso. Debido a que las comillas dobles introducen una cadena de carácteres, con lo cual tendrá mas espacio de memoria que las comillas simples.
+9.- Falso. 2ndo no podrá ser el nombre de una variable debido a que las variables nunca podrán empezar por un número.
+True tampoco podrá usarse por que es una palabra reservada del lenguaje. Dirección tampoco servirá porque tiene carácteres del dicceonario español ( las tildes )
+al igual que año, que usará la ñ
+10.- Verdadero. por que si no no existiria esa variable
+11.- Falso. porque con los paréntesis cambiariamos el orden, con lo cual cambiaria el resultado.
+12.- Verdadero. el identificador cin le dirá al ordenador que va a entrar información por el teclado
+13.- Falso. Por que solamente deberás de poner el nombre asignado a esa variable.
+14.- Falso. Tendremos que especificar que el valor es 0.
+15.- Verdadero. Lo difícil es aprender a pensar.
+
+Problema 1.3
+Linea 1.- En esta linea aparecerá un mensaje en pantalla donde pondrá: " valor de x" y mostrara el resultado dado a x, en este caso 5.
+Linea 2.- En esta linea aparecerá un mensaje en pantalla donde pondrá: " valor de y" y mostrara el resultado dado a y, en este caso 2.
+Linea 3.- En esta linea se mostrará un mensaje que dirá lo siguiente: " valor de x/y\n" despue´s, dividirá x entre y y lo volvera a dividir por n, que será
+un dato que introducirá el usuario.
+Linea 4.-
+Linea 5.- En este caso, en la pantalla pondrá " La mitad de x". El ordenador dividirá x entre 2 y mostrará el resultado en pantalla (2.5).
+
+Problema 1.4
+En este programa tendremos dos variables declaras que serán "A" con un valor de 5 y "b" con un valor de 3. Después el orenador ejecutará los cálculos dados
+en la operación escrita en cout y nos devolverá el resultado en pantalla.
+ -nos dará error debido a que estaremos dividiendo entre 0, con lo cual no se podrá realizar la cuenta.
+
+problema 1.5
+Este programa cuenta de diferentes errores:
+-En la linea 1, faltrá el # de include, con lo cual no lo leerá.
+-en la linea 2, nos faltará poner la sentencia modo god "using namespace std;".
+en la linea 4, nos indica las variables que utilizará. Yo modificaria esa linea inicializandolas a 0.0.
+-en la linea 6, nos faltará  el ; de el final de la frase y que los simbolos << están al revés.
+-En la linea 6 y 7 yo cambaria que pondría el cin en la linea de abajo para verlo mejor.
+-En la linea 9 tendremos que poner las dobles comillas a es, si no no lo reconocerá como una cadena de caracteres.
+-por ultimo, en la linea 10 tendremos que borrar el espacio que hay entre <<.
+nos dará error de ejecución si metemos letras.

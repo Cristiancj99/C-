@@ -1,0 +1,23 @@
+/* Programa que sirve para calcular cuantos 
+dias, hora, minutos y segundos son un
+numero de segundos introducidos por el usuario. */
+
+
+#include <iostream>
+using namespace std;
+int main () {
+// Variables necesarias.	
+	int segundos= 0.0;
+	int dia= 0.0, horas= 0.0, minutos= 0.0, segundos_finales= 0.0;
+	cout << " Bienvenido al programa para transformar los segundos en horas, dias, minutos y segundos restantes." << endl;
+// pedimos ENTRADA de los segundos al usuario.	
+	cout << " Introduzca el nñumero de segundos: ";
+	cin >> segundos;
+// Calculos necesarios para calcular cada cosa.	
+	dia = segundos / 86400;
+	horas = ( segundos % 86400) / 3600;
+	minutos = (( segundos % 86400) % 3600) / 60;
+	segundos_finales = (( segundos % 86400) % 3600) % 60;
+// damos las SALIDAS del programa.	
+	cout << "Tendrás un total de: " << dia << " dias,  " << horas << " horas, " << minutos << " minutos, " << segundos_finales << " segundos restantes. " << endl;
+}

@@ -1,0 +1,27 @@
+/* Programa para calcular las ecuaciones de 2 grado
+del tipo ax^2 - bx + c = 0*/
+
+
+#include <iostream>
+#include <cmath>
+using namespace std;
+int main() {
+// Marcamos las variables necesarias
+	double a= 0.0, b= 0.0, c= 0.0;
+	double respuesta1= 0.0, respuesta2= 0.0;
+	cout << " Bievenido al programa para calcular ecuaciones de 2 grado" << endl;
+//pediremos las ENTRADAS del programa al usuario. 
+	cout << "Para empezar, introduzca el valor de a: ";
+	cin >> a;
+	cout << " Para continuar, introduzca el valor de b: ";
+	cin >> b;
+	cout << " Finalmente, introduzca el valor de c y verá la magia: ";
+	cin >> b;
+// acciones necesarias para calcular las respuestas.
+	respuesta1 = (-b + sqrt( b*b - 4*a*c))/ (2*a);
+	respuesta2 = (-b - sqrt( b*b - 4*a*c))/ (2*a);
+/* SALIDAS del programa. (+) significa 
+que coges la parte + de la fórmula, 
+y (-), la parte menos.*/
+	cout << "Los resultados de la ecuación serán resultado 1 (+) = " << respuesta1 << " y el resultado 2 (-) será = " << respuesta2 << endl;
+}

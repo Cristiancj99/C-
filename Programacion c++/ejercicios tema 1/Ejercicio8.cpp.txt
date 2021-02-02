@@ -1,0 +1,25 @@
+/* Programa utilizado para resolver 
+las tablas de multiplicar del 1 al 10*/
+
+#include <iostream>
+using namespace std;
+int main() {
+//Añadiremos la constante double que dará la entrada al numero que quiera el usuario.
+	double numero_introducido= 0.0;
+	cout << "bienvenido al programa para ver las tablas de multiplicar." << endl;
+// Entrada del número del usuario.
+	cout << "introduzca un número del 1 al 10: ";
+	cin >> numero_introducido;
+//Proceso para calcular las tablas y dar la salida de las tablas.
+	cout << numero_introducido << " x 0 = " << numero_introducido * 0 << endl;
+	cout << numero_introducido << " x 1 = " << numero_introducido * 1 << endl;
+	cout << numero_introducido << " x 2 = " << numero_introducido * 2 << endl;
+	cout << numero_introducido << " x 3 = " << numero_introducido * 3 << endl;
+	cout << numero_introducido << " x 4 = " << numero_introducido * 4 << endl;
+	cout << numero_introducido << " x 5 = " << numero_introducido * 5 << endl;
+	cout << numero_introducido << " x 6 = " << numero_introducido * 6 << endl;
+	cout << numero_introducido << " x 7 = " << numero_introducido * 7 << endl;
+	cout << numero_introducido << " x 8 = " << numero_introducido * 8 << endl;
+	cout << numero_introducido << " x 9 = " << numero_introducido * 9 << endl;
+	cout << numero_introducido << " x 10 = " << numero_introducido * 10 << endl;
+}

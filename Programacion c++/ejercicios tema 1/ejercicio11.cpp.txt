@@ -1,0 +1,21 @@
+/* Ejercico para calcular la nota de 
+programación */
+
+
+#include <iostream>
+using namespace std;
+int main() {
+	float nota_teoria = 0.0, nota_practica = 0.0, nota_problemas = 0.0;
+	double nota_final = 0.0;
+	cout << "Bienvenidos al programa para calcular la nota final de programacion." << endl;
+//Pedimos las ENTRADAS al usuario.	
+	cout << "empezaremos introduciendo sus notas de las tres partes evaluables ( nota de la teoria, de la práctica y de los problemas respectivamente) : ";
+	cin >> nota_teoria >> nota_practica >> nota_problemas;
+// Proceso para calcular la nota final.	
+	nota_final = (nota_teoria * 0.70) + (nota_practica * 0.20) + (nota_problemas * 0.10);
+//Damos las salidas.
+	cout << "Su nota final será de : " << nota_final << endl;
+	cout << "Su nota de teoría es: " << nota_teoria * 0.70 << endl;
+	cout << "Su nota de la práctica es: " << nota_practica * 0.20 << endl;
+	cout << "Su nota de los problemas es: " <<nota_problemas * 0.10 << endl;
+}

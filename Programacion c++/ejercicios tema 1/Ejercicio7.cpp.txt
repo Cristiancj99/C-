@@ -1,0 +1,20 @@
+
+/* Programa que realizará la suma, resta, 
+multiplicación y división de 2 números. */
+
+#include <iostream>
+using namespace std;
+int main () {
+// Utilizaremos estas dos variables
+	double a= 0.0,b= 0.0;
+// Aquí presentamos el programa al usuario y le pediremos las entradas.	
+	cout << "¡Hola usuarios! vamos usar este programa  como una mini calculadora." << endl;
+	cout << " Empezaremos por introdcir el primer número: ";
+	cin >> a;
+	cout << " Introduzca el segundo número: ";
+	cin >> b;
+// Finalmente daremos las salidas de los resutados al usuario.
+	cout << " Resultados: suma = " << a + b << " ,resta: " << a - b << " ,multiplicación: " 	<< a * b << " ,división: " << a/b << endl;
+}
+
+// el programa dará error si se le introducen  letras.

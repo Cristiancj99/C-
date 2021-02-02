@@ -1,0 +1,37 @@
+/* programa que calculará el salario
+neto a partir de un salario bruto de 
+manera avanzada, además de descontando
+algunos gastos.*/
+#include <iostream>
+using namespace std;
+int main () {
+	const double COTIZACION_SS = 0.26; //Cotizacion del salario que se quedará la ss//
+	const double IRPF = 0.08; 
+	const double CONTINGENCIAS = 0.04;
+	double salario_bruto= 0.0;
+	double salario_neto= 0.0;
+	double salario_libre= 0.0;
+	double vivienda= 0.0;
+	double facturas= 0.0;
+	double colegio= 0.0;
+	
+	cout << "Bienvenido al programa para calcular el salario neto a partir del salario bruto." << endl;
+// Entradas del programa.	
+	cout << "introduzca su salario bruto: ";
+	cin >> salario_bruto; // aqui introducirá el salario bruto
+// Proceso para calcular el salario neto.
+	salario_neto = salario_bruto - (salario_bruto * COTIZACION_SS) - (salario_bruto * IRPF) - (salario_bruto * CONTINGENCIAS); // Cuentas necesarias para calcular el 		salario neto//
+// SALIDAS del programa
+	cout << "El salario neto será de: "<< salario_neto << " con una retención de: " << salario_bruto * COTIZACION_SS << " por la seguridad social, la retención de IRPF de: " << salario_bruto * IRPF << " y por último su retención por contingencias es de: " << salario_bruto * CONTINGENCIAS << endl;
+		
+// Gastos para ver el salario que te queda libre.
+	cout << "Ahora tendras que introducir tus gastos para conseguir el salario que queda libre" << endl;
+		cout <<"Introduzca el precio de su hipotéca: ";
+		cin >> vivienda;
+		cout << " Ahora, introduzca el importe de las diferentes facturas a pagar: ";
+		cin >> facturas;
+		cout << " Finalmente introduzca el importe mensuar escolar de sus hijos (si es que tiene): ";
+		cin >> colegio;
+		salario_libre = (salario_neto - vivienda) - facturas - colegio;
+		cout << " El salario libre será de: "<< salario_libre << endl;
+}
